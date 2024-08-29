@@ -29,17 +29,6 @@ a {
   height: 100vh;
   max-width: 100vw;
 }
-#mainmenu {
-  flex: 2;
-  max-width: 50vw;
-}
-
-.side1 {
-  flex: 1;
-}
-.side2 {
-  flex: 1;
-}
 
 /* Sidebar Styles */
 .sidebar {
@@ -50,6 +39,17 @@ a {
   padding: 20px;
   border-radius: 15px;
   overflow-y: auto;
+}
+#mainmenu {
+  flex: 2;
+  max-width: 500px;
+}
+
+.side1 {
+  flex: 1;
+}
+.side2 {
+  flex: 1;
 }
 
 #ball1 {
