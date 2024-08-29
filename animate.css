@@ -1,0 +1,24 @@
+@media only screen and (orientation: portrait) {
+    .container {
+      flex-direction: column; /* Switch to column layout in portrait mode */
+    }
+  
+    .sidebar, 
+    .main-content, 
+    .description {
+      width: 100%; /* Make all elements take full width */
+      flex: none;  /* Disable flex-grow to stack elements vertically */
+    }
+  
+    .description {
+      order: 3; /* Move description below the main content */
+    }
+  
+    .main-content {
+      order: 2; /* Main content in the middle */
+    }
+  
+    .sidebar {
+      order: 1; /* Sidebar at the top */
+    }
+  }
