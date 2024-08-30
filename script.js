@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const animationData = {
         'attack1': {
-            videoSrc: 'animations/attack1.mp4',
-            title: 'Attack 1',
+            videoSrc: 'Against-zone-2.mp4',
+            title: 'B4 Drive in',
             description: 'Description for Attack 1...',
-            exampleUrl: 'https://example.com/attack1'
+            exampleUrl: 'https://youtu.be/A0_CQ1x_-3Q?t=1628'
         },
         'attack2': {
             videoSrc: 'animations/attack2.mp4',
