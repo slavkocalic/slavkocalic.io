@@ -9,7 +9,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  background-color: #e0f7fa; /* Background color of the page */
+  background-color: #e0f7fa;
   font-family: Arial, sans-serif;
   font-size: large;
 }
@@ -20,7 +20,7 @@ a {
 }
 
 #example-link {
-  color: #000000;
+  color: #127cff;
 }
 
 .container {
@@ -36,13 +36,13 @@ a {
   background-color: #042131;
   color: white;
   align-items: center;
-  padding: 20px;
+  padding: 1%;
   border-radius: 15px;
   overflow-y: auto;
 }
 #mainmenu {
   flex: 2;
-  max-width: 550px;
+  max-width: 50vh;
 }
 
 .side1 {
@@ -62,7 +62,6 @@ a {
 }
 
 .nav-item {
-  width: 100%;
   border: solid 2.5px;
   border-color: black;
   border-radius: 5px;
@@ -99,14 +98,13 @@ a {
   flex: 2.5;
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  
+  padding: 5px;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 15px;
   overflow: hidden;
   background-color: black; /* Temporary background to visualize the container */
 }
@@ -126,8 +124,6 @@ a {
   object-fit: cover; /* This ensures the video covers the entire container */
 }
 
-
-
 #controls {
   width: 100%;
   display: flex;
@@ -135,12 +131,11 @@ a {
   align-items: center;
   padding: 10px;
 }
-  
-/* Description Styles */
+
 .description {
   width: 20%;
   padding: 20px;
-  border-left: 1px solid #ccc; /* Add a border to separate description */
+  border-left: 1px solid #cccccc; /* Add a border to separate description */
   overflow-y: auto; /* Ensure description is scrollable if content overflows */
   display: flex;
   flex-direction: column;
@@ -152,7 +147,7 @@ a {
 }
   
 .description p {
-  font-size: 20px;
+  font-size: 1.2em;
   color: #666;
 }
   

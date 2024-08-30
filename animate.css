@@ -11,14 +11,14 @@
     }
   
     .description {
-      order: 3; /* Move description below the main content */
+      order: 2; /* Move description below the main content */
     }
   
     .main-content {
-      order: 2; /* Main content in the middle */
+      order: 1; /* Main content in the middle */
     }
   
     .sidebar {
-      order: 1; /* Sidebar at the top */
+      order: 3; /* Sidebar at the top */
     }
   }
