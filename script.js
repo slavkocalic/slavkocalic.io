@@ -37,21 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
             exampleUrl: 'https://example.com/attack2'
         },
         'defense1': {
-            videoSrc: 'Zona_3_Vanjska.mp4',
-            title: 'Zone 3',
-            description: 'Description for Defense 1...',
-            exampleUrl: 'https://youtu.be/36a-fxnLTKI?t=1549',
+            videoSrc: 'Zone-2-3.mp4',
+            title: 'Zone 2-3',
+            description: 'Description',
+            exampleUrl: 'https://youtu.be/MmOnEiqntVA?t=2561',
             textChanges: [
-                { startTime: 0, endTime: 3, text: "About this situation. What each player has to think about. Some general guidance." },
-                { startTime: 3, endTime: 5, text: "Text for 0:03 to 0:5" },
-                { startTime: 5, endTime: 9999, text: "Text for 0:05 and beyond" }
+                { startTime: 0, endTime: 2, text: "We retreat into the zone after the center has taken position. The cooperation and synchronization between W2 and W3 is of utmost importance here. At the moment B2 receives the ball, W2 moves towards him with a block that covers the goalkeeper's left side. W3 is slightly pulled back and stands on the line between B2 and B4(trying to intercept the pass). The rest of the defense, although in pressing, is constantly involved in defense by keeping track of what's happening (hand on the shoulder, head towards the game) and ready to help at any moment." },
+                { startTime: 2, endTime: 4, text: "As soon as the ball leaves B2's hand and heads towards B3, W2 moves back to the space closer to the center (ideally from where he can reach the ball with a single move), while W3 goes out with a block or jump towards B3. W3 can confidently leave the zone because he knows that the newly created 'gap' will be covered by W2." },
+                { startTime: 4, endTime: 9999, text: "As soon as the ball leaves B3's hand and heads towards B4, W3 moves back to the space closer to the center (keeping in mind the amount of space in front of the center and the position of the defender). W4 keeps B4 under pressure (a body position from the side of B4 is preferred to prevent an easy pass to a dangerous shooter), and if B4 does manage to get the ball, an attempt is made to take it away without committing a foul. W4 is always on alert for B4's movement inside or a body block by B5 (at that point, communication between W5 and W4 is crucial)." }
             ]
         },
         'defense2': {
             videoSrc: 'animations/defense2.mp4',
-            title: 'Defense 2',
-            description: 'Description for Defense 2...',
-            exampleUrl: 'https://example.com/defense2'
+            title: 'Zone 2-3',
+            description: 'Description',
+            exampleUrl: 'https://youtu.be/36a-fxnLTKI?t=1549'
+            
         },
         // Add more animations as needed
     };

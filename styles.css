@@ -21,6 +21,7 @@ a {
 
 #example-link {
   color: #127cff;
+  font-size: 0.9em;
 }
 
 .container {
@@ -143,11 +144,12 @@ a {
 }
   
 .description h2 {
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
   
 .description p {
-  font-size: 1.2em;
+  font-size: 0.8em;
   color: #666;
 }
   
