@@ -26,9 +26,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const animationData = {
         'attack1': {
             videoSrc: 'Against-zone-2.mp4',
-            title: 'B4 Drive in',
+            title: 'Drive in vs zone 2-3',
             description: 'Description for Attack 1...',
-            exampleUrl: 'https://youtu.be/A0_CQ1x_-3Q?t=1628'
+            exampleUrl: 'https://youtu.be/A0_CQ1x_-3Q?t=1628',
+            textChanges: [
+                { startTime: 0, endTime: 4, text: "Against this type of zone, play patiently (wait for a drive in, a block or for enough space to open up in front of the center to make a pass) and without taking unexpected shots (due to the risk of counter-attacks). Additionally, it is necessary to use fakes and slowly move closer to the goal to appear visibly aggressive and dangerous (to lure a defensive player out of the zone). Since B2 and B3 are not under pressing, they usually pass the ball between themselves, trying to bait the defenders into making a mistake that they can exploit." },
+                { startTime: 4, endTime: 7, text: "After B3 passes the ball back to B2, B3 uses his legs to move to the side where B4 has 'cleared' space by driving in (hoping that W3 hasn't noticed this shift in time, as he might be more focused on the ball at that moment)." },
+                { startTime: 7, endTime: 9999, text: "If B4, by swimming inside, has managed to create a situation where he is left alone, B2 needs to be prepared for that and make a timely and accurate pass for a shot. If that situation has not been created, after moving to the side, B3 now has a somewhat 'clearer' path for a shot because the block from W3 is not in an ideal position anymore. It is important to emphasize that every time a shot is taken towards the goal, regardless of the position, all attackers (especially B1 and B5) must immediately start swimming back into defense at the moment of the shot (it is said that they shouldn't even see the goal)." }
+            ]
         },
         'attack2': {
             videoSrc: 'animations/attack2.mp4',
