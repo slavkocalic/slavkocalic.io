@@ -163,6 +163,7 @@ a {
   border: none;
   border-radius: 50%;
   background-color: #2196F3;
+  flex: 0 0 auto;
   color: white;
   cursor: pointer;
   display: flex;
