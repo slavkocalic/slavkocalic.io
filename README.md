@@ -3,7 +3,7 @@
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="assets/ballMenu.png">
  <source media="(prefers-color-scheme: light)" srcset="assets/ballMenu2.png">
- <img alt="YOUR-ALT-TEXT" src="assets/ballMenu2.png">
+ <img alt="WP Tactics logo" src="assets/ballMenu2.png">
 </picture>
 
 #### Video Demo:  <URL HERE>
@@ -18,7 +18,7 @@ WP Tactics is a web application designed to help users understand various water 
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Customization](#customization)
+- [Future Improvements](#future-improvements)
 
 ### Features
 
@@ -68,15 +68,17 @@ Video and Description
 
 Links for Real-Life Examples
 
-    To enhance the educational value of WP Tactics, each water polo tactic featured in the app is linked to a specific moment in a real-life water polo game. These links allow users to see how the tactic is applied in a professional match setting, offering a practical perspective on the theoretical concepts.
+    These links allow users to see how the tactic is applied in a professional match setting, offering a practical perspective on the theoretical concepts. When a user selects a tactic from the `animation.html` page, not only do they see a 2D animation of the tactic, but they also have the option to click on a link that takes them directly to a video clip of an actual game where this tactic is executed.
 
-### Customization:
 
-You can easily customize the project by adding new tactics, modifying existing ones, or updating the real-life example links:
+### Future Improvements
 
-    Add New Tactics:
-        Place the new video files in the assets/ directory.
-        Update the configuration in script.js to include the new tactics, specifying the video source, title, description, and the URL for the real-life example.
+While WP Tactics currently provides a starting platform for learning and visualizing water polo tactics, there are several enhancements planned to improve the user experience and extend the app’s functionality:
 
-    Modify Styles:
-        Edit the index.css and animate.css files to change the look and feel of the app to match your preferences.
+    1. **Registration Form to Unlock More Situations**: In future versions, I plan to implement a user registration and login system. Registered users will gain access to additional, more advanced water polo situations, providing a broader and more in-depth learning experience. This feature will also allow for personalized content recommendations against different teams.
+
+    **Adding More Tactics**: Currently, WP Tactics features only two tactics, which serve as an introduction to this app. Future updates will expand the library of tactics, including more complex and varied situations that cover a wider range of in-game scenarios. This will provide users with a more comprehensive resource for understanding and mastering water polo tactics.
+
+    3. **Error Handling**: Currently, the app does not include robust error handling for video loading and playback issues. In the future updates, I plan to introduce error handling mechanisms that provide users with clear feedback if a video fails to load or play correctly. This will include fallback options and helpful error messages to ensure that users can continue using the app smoothly even if technical issues arise.
+
+These improvements are designed to make WP Tactics more user-friendly, robust and reliable, enhancing its value as an educational tool for water polo enthusiasts.
