@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const animationData = {
         'attack1': {
-            videoSrc: 'Against-zone-2.mp4',
+            videoSrc: 'assets/Against-zone-2.mp4',
             title: 'Drive in vs zone 2-3',
             description: 'Description for Attack 1...',
             exampleUrl: 'https://youtu.be/A0_CQ1x_-3Q?t=1628',
@@ -36,13 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         'attack2': {
-            videoSrc: 'animations/attack2.mp4',
+            videoSrc: 'assets/attack2.mp4',
             title: 'Attack 2',
             description: 'Description for Attack 2...',
             exampleUrl: 'https://example.com/attack2'
         },
         'defense1': {
-            videoSrc: 'Zone-2-3.mp4',
+            videoSrc: 'assets/Zone-2-3.mp4',
             title: 'Zone 2-3',
             description: 'Description',
             exampleUrl: 'https://youtu.be/MmOnEiqntVA?t=2561',
@@ -53,16 +53,16 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         'defense2': {
-            videoSrc: 'animations/defense2.mp4',
+            videoSrc: 'assets/defense2.mp4',
             title: 'Zone 2-3',
             description: 'Description',
             exampleUrl: 'https://youtu.be/36a-fxnLTKI?t=1549'
             
         },
-        // Add more animations as needed
+        // Add more animations
     };
 
-    let animation = null; // Declare animation in the global scope
+    let animation = null;
 
     function loadAnimation(animationKey) {
         animation = animationData[animationKey];
