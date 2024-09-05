@@ -1,9 +1,9 @@
 # WP Tactics
 
 <picture>
- <source media="(prefers-color-scheme: dark)" srcset="assets/ballMenu.png">
- <source media="(prefers-color-scheme: light)" srcset="assets/ballMenu2.png">
- <img alt="WP Tactics logo" src="assets/ballMenu2.png">
+ <source media="(prefers-color-scheme: dark)" srcset="assets/ballMenu.png" width="200">
+ <source media="(prefers-color-scheme: light)" srcset="assets/ballMenu2.png" width="200">
+ <img alt="WP Tactics logo" src="assets/ballMenu2.png" width="200">
 </picture>
 
 #### Video Demo:  <URL HERE>
