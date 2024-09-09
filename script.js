@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {   
     const parentOptions = document.querySelectorAll('.parent-option');
 
-    // Visibility of child menu(navbar) options
     parentOptions.forEach(option => {
         option.addEventListener('click', function() {
             const childOptions = this.nextElementSibling;
@@ -59,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
             exampleUrl: 'https://youtu.be/36a-fxnLTKI?t=1549'
             
         },
-        // Add more animations
     };
 
     let animation = null;
@@ -68,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         animation = animationData[animationKey];
         if (animation) {
             videoSource.src = animation.videoSrc;
-            video.load(); // Reload the video with the new source
+            video.load(); 
             animationTitle.textContent = animation.title;
             textchange.textContent = animation.description;
             exampleLink.href = animation.exampleUrl;
@@ -79,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Read query parameters to determine which animation to load
     const urlParams = new URLSearchParams(window.location.search);
     const animationKey = urlParams.get('animation');
 
@@ -87,11 +84,10 @@ document.addEventListener("DOMContentLoaded", function() {
         loadAnimation(animationKey);
     }
 
-    // Handle click events for child options
     document.querySelectorAll('.child-option').forEach(option => {
         option.addEventListener('click', function() {
             const animationKey = this.getAttribute('data-animation');
-            loadAnimation(animationKey); // Load the relevant animation data
+            loadAnimation(animationKey); 
         });
     });
 
@@ -127,7 +123,6 @@ document.addEventListener("DOMContentLoaded", function() {
             elapsedTime.textContent = formattedTime;
             nowTime.textContent = formattedTime;
 
-            // Dynamically update text based on time intervals
             if (animation && animation.textChanges) {
                 const textChange = animation.textChanges.find(change => currentTime >= change.startTime && currentTime < change.endTime);
                 if (textChange) {
