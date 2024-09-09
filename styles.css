@@ -1,5 +1,3 @@
-/* Reset margin and padding for body and html */
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +29,6 @@ a {
   max-width: 100vw;
 }
 
-/* Sidebar Styles */
 .sidebar {
   flex: 1;
   background-color: #042131;
@@ -94,7 +91,6 @@ a {
   cursor: pointer;
 }
 
-/* Main Content Styles */
 .main-content {
   flex: 2.5;
   display: flex;
@@ -107,7 +103,7 @@ a {
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
-  background-color: black; /* Temporary background to visualize the container */
+  background-color: black;
 }
 
 .video-container:before {
@@ -122,7 +118,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This ensures the video covers the entire container */
+  object-fit: cover;
 }
 
 #controls {
@@ -136,8 +132,8 @@ a {
 .description {
   width: 20%;
   padding: 20px;
-  border-left: 1px solid #cccccc; /* Add a border to separate description */
-  overflow-y: auto; /* Ensure description is scrollable if content overflows */
+  border-left: 1px solid #cccccc; 
+  overflow-y: auto; 
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
