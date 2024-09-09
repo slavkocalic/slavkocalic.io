@@ -2,8 +2,8 @@
 
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="assets/ballMenu.png">
- <source media="(prefers-color-scheme: light)" srcset="assets/ballMenu2.png">
- <img alt="WP Tactics logo" src="assets/ballMenu2.png">
+ <source media="(prefers-color-scheme: light)" srcset="assets/ballMenuOption2.png">
+ <img alt="WP Tactics logo" src="assets/ballMenuOption2.png">
 </picture>
 
 ### Description:
