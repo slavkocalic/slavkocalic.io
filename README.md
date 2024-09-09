@@ -6,8 +6,6 @@
  <img alt="WP Tactics logo" src="assets/ballMenu2.png">
 </picture>
 
-#### Video Demo:  <URL [HERE](https://youtu.be/a4p5574ruB8)>
-
 ### Description:
 
 WP Tactics is a web application designed to help users understand various water polo tactics through visual and descriptive guides. The app presents a series of 2D, top-down view animations that depict different water polo situations, with each situation accompanied by detailed descriptions. The animations are created using Blender, and the app leverages modern web technologies to deliver an interactive and educational experience.
