@@ -1,24 +1,24 @@
 @media only screen and (orientation: portrait) {
     .container {
-      flex-direction: column; /* Switch to column layout in portrait mode */
+      flex-direction: column; 
     }
   
     .sidebar, 
     .main-content, 
     .description {
-      width: 100%; /* Make all elements take full width */
-      flex: none;  /* Disable flex-grow to stack elements vertically */
+      width: 100%; 
+      flex: none;  
     }
   
     .description {
-      order: 2; /* Move description below the main content */
+      order: 2; 
     }
   
     .main-content {
-      order: 1; /* Main content in the middle */
+      order: 1; 
     }
   
     .sidebar {
-      order: 3; /* Sidebar at the top */
+      order: 3; 
     }
   }
