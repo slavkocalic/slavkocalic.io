@@ -1,24 +1,24 @@
 @media only screen and (orientation: portrait) {
     .container {
-      flex-direction: column; 
+      flex-direction: column;
     }
   
     .sidebar, 
     .main-content, 
     .description {
-      width: 100%; 
-      flex: none;  
+      width: 100%;
+      flex: none;
     }
   
     .description {
-      order: 2; 
+      order: 3; 
     }
   
     .main-content {
-      order: 1; 
+      order: 2;
     }
   
     .sidebar {
-      order: 3; 
+      order: 1;
     }
   }
