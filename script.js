@@ -1,13 +1,34 @@
-document.addEventListener("DOMContentLoaded", function() {   
+document.addEventListener("DOMContentLoaded", function() {
+    const grandparentOption = document.querySelector('.grandparent-option');
+    const parentOptionsContainer = document.querySelector('.parent-options');
     const parentOptions = document.querySelectorAll('.parent-option');
+    const childNumber = document.querySelectorAll('div.child-option').length;
+   
+    // Toggle visibility of parent options with smooth dropdown effect
+    grandparentOption.addEventListener('click', function() {
+        grandparentOption.classList.toggle('active')
+        
+        if (!parentOptionsContainer.style.maxHeight || parentOptionsContainer.style.maxHeight === "0px") {
+            // Expand parent options by setting max-height to scrollHeight
+            parentOptionsContainer.style.maxHeight = (childNumber/2 * parentOptionsContainer.scrollHeight) + "px";
+        } else {
+            // Collapse parent options by setting max-height back to 0
+            parentOptionsContainer.style.maxHeight = "0";
+        }
+    });
 
+    // Toggle visibility of child options with smooth dropdown effect
     parentOptions.forEach(option => {
         option.addEventListener('click', function() {
             const childOptions = this.nextElementSibling;
-            if (childOptions.style.display === "none" || !childOptions.style.display) {
-                childOptions.style.display = "flex";
+
+            // Check if child options are collapsed
+            if (!childOptions.style.maxHeight || childOptions.style.maxHeight === "0px") {
+                // Expand child options
+                childOptions.style.maxHeight = childOptions.scrollHeight + "px";
             } else {
-                childOptions.style.display = "none";
+                // Collapse child options
+                childOptions.style.maxHeight = "0";
             }
         });
     });
@@ -56,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
             title: 'Zone 2-3',
             description: 'Description',
             exampleUrl: 'https://youtu.be/36a-fxnLTKI?t=1549'
-            
         },
     };
 
@@ -66,11 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
         animation = animationData[animationKey];
         if (animation) {
             videoSource.src = animation.videoSrc;
-            video.load(); 
+            video.load();
             animationTitle.textContent = animation.title;
             textchange.textContent = animation.description;
             exampleLink.href = animation.exampleUrl;
-
             if (animation.textChanges && animation.textChanges.length > 0) {
                 textchange.textContent = animation.textChanges[0].text;
             }
@@ -84,10 +103,11 @@ document.addEventListener("DOMContentLoaded", function() {
         loadAnimation(animationKey);
     }
 
+    // Handle click events for child options
     document.querySelectorAll('.child-option').forEach(option => {
         option.addEventListener('click', function() {
             const animationKey = this.getAttribute('data-animation');
-            loadAnimation(animationKey); 
+            loadAnimation(animationKey);
         });
     });
 
@@ -123,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
             elapsedTime.textContent = formattedTime;
             nowTime.textContent = formattedTime;
 
+            // Dynamically update text based on time intervals
             if (animation && animation.textChanges) {
                 const textChange = animation.textChanges.find(change => currentTime >= change.startTime && currentTime < change.endTime);
                 if (textChange) {
@@ -141,4 +162,25 @@ document.addEventListener("DOMContentLoaded", function() {
             return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
         }
     }
+
+    //Content overflow solution
+    const sidebar = document.querySelector('.sidebar');
+
+    function checkOverflow() {
+      if (sidebar.scrollHeight > sidebar.clientHeight) {
+        sidebar.style.overflowY = 'scroll';
+      } else {
+        sidebar.style.overflowY = 'hidden';
+      }
+    }
+    
+    const dropdowns = document.querySelectorAll('.child-options');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('transitionend', () => {
+        checkOverflow();
+      });
+    });
+    checkOverflow();
+    window.addEventListener('resize', checkOverflow);
 });
