@@ -59,10 +59,10 @@ a {
   border-color: black;
   border-radius: 15px;
   font-weight: bold;
-  overflow: hidden; /* Ensures no overflow outside the box */
-  white-space: nowrap; /* Prevent text from wrapping to next line */
-  text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
-  max-width: 100%; /* Ensures it uses full available width */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -82,27 +82,26 @@ a {
 }
 
 .parent-options {
-  max-height: 0; /* Initially hidden */
-  overflow: hidden; /* Hide content when max-height is 0 */
-  transition: max-height 0.5s cubic-bezier(1, 0, 0, 1); /* Smooth transition for parent options */
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 0.5s cubic-bezier(1, 0, 0, 1); 
   flex-direction: column;
   width: 100%;
 }
 .parent-options.active {
-  max-height: none; /* Adjust this value based on the expected height */
+  max-height: none; 
 }
 
 .child-options {
-  max-height: 0; /* Initially hidden */
-  overflow: hidden; /* Hide content when max-height is 0 */
-  transition: max-height 0.5s ease; /* Smooth transition */
+  max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.5s ease; 
   flex-direction: column;
   width: 100%;
 }
 
-/* When child options are active, allow space to expand */
 .child-options.active {
-  max-height: none; /* Adjust this value based on the expected height */
+  max-height: none;
 }
 
 .child-option {
@@ -125,7 +124,7 @@ a {
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
-  background-color: black; /* Temporary background to visualize the container */
+  background-color: black; 
 }
 
 .video-container:before {
